@@ -19,6 +19,11 @@ String printIntroduction() {
     'job': 'Engineer'
   };
   final String intro =
-      "My name is ${myInfo['name']}! I'm a ${myInfo['age']} years old. My job is ${myInfo['job']}. Nice to meet you.";
+      "My name is ${myInfo['name']}! I'm a ${myInfo['age']} years old. My job is ${myInfo['job']}. Nice to meet you. I like ${printString()}.";
   return intro;
+}
+
+// 関数の返り値を埋め込む
+String printString() {
+  return 'apple';
 }
