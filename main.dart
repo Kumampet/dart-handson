@@ -29,22 +29,11 @@ void main() {
   const Set<int> set_of_ints = {1, 2, 3, 4, 5};
   print("set of ints: ${set_of_ints.join(", ")}です。");
 
-  // 関数の定義
-  int sum(int a, int b) => a + b;
   // 関数の呼び出し
-  print("sum: ${sum(3, 7)}です。");
+  print(myFunc());
+}
 
-  // 無名関数の定義
-  double multiply(double a, double b){
-    return a * b;
-  }
-  // 無名関数の呼び出し
-  print("multiply: ${multiply(2.5, 3.75)}です。");
-
-  // ラムダ式の定義
-  double divide(double a, double b) {
-    return b == 0? 0 : a / b;
-  }
-  // ラムダ式の呼び出し
-  print("divide: ${divide(15, 3)}です。");
+// 関数の定義
+String myFunc() {
+  return "Hello, from a function!";
 }
