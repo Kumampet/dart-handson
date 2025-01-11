@@ -29,11 +29,12 @@ void main() {
   const Set<int> set_of_ints = {1, 2, 3, 4, 5};
   print("set of ints: ${set_of_ints.join(", ")}です。");
 
-  // 関数の呼び出し
-  print(myFunc());
+  // 関数の呼び出しと変数への置き換え
+  final String Function(int) myFunc = myFunction;
+  print(myFunc(10));
 }
 
 // 関数の定義
-String myFunc() {
-  return "Hello, from a function!";
+String myFunction(int num) {
+  return "Hello, from a function! int: $num";
 }
